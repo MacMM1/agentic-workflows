@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ headline }}</title>
+<style>
+  body { margin: 0; padding: 0; background-color: #efe3d6; font-family: Arial, Helvetica, sans-serif; }
+  .wrapper { width: 100%; background-color: #efe3d6; }
+  .container { width: 600px; max-width: 600px; }
+  .brand-band { background-color: #8B5A3C; padding: 28px 24px 24px 24px; }
+  .badge-cell { padding-bottom: 8px; }
+  .badge { width: 64px; height: 64px; border-radius: 18px; background-color: #5C3A24; }
+  .badge-letter { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 32px; color: #FBEFE4; line-height: 64px; }
+  .wordmark { font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 3px; color: #FBEFE4; font-weight: bold; padding-top: 6px; }
+  .panel { background-color: #FBEFE4; }
+  .eyebrow-row td { font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 2px; color: #8B5A3C; font-weight: bold; padding: 20px 28px 0 28px; }
+  .headline { font-family: Georgia, 'Times New Roman', serif; font-size: 28px; line-height: 36px; color: #5C3A24; font-weight: bold; text-align: center; padding: 10px 28px 4px 28px; }
+  .divider { padding: 4px 0 8px 0; text-align: center; }
+  .intro { font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 23px; color: #3B2A1E; text-align: center; padding: 0 32px 20px 32px; }
+  .card-wrap { padding: 0 24px 16px 24px; }
+  .card { background-color: #CFA084; border-radius: 16px; }
+  .card-heading { font-family: Georgia, 'Times New Roman', serif; font-size: 18px; line-height: 24px; color: #4A2F1E; font-weight: bold; padding: 20px 22px 6px 22px; }
+  .card-body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; color: #3B2A1E; padding: 0 22px 20px 22px; }
+  .step-list { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; color: #3B2A1E; padding: 0 22px 20px 40px; margin: 0; }
+  .step-list li { padding-bottom: 4px; }
+  .voice-card { background-color: #5C3A24; border-radius: 16px; }
+  .voice-heading { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; color: #FBEFE4; font-weight: bold; padding: 20px 22px 6px 22px; }
+  .voice-body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 21px; color: #ECD9C6; padding: 0 22px 20px 22px; }
+  .footer-band { background-color: #5C3A24; padding: 24px 24px 8px 24px; }
+  .footer-item { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #FBEFE4; padding: 0 10px; }
+  .footer-divider { color: #A8815F; font-size: 12px; }
+  .disclaimer-cell { border-top: 1px dashed #A8815F; padding: 14px 24px 22px 24px; text-align: center; }
+  .disclaimer { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #C9AD91; font-style: italic; }
+</style>
+</head>
+<body>
+  <table role="presentation" class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+
+          <!-- Brand band: logo badge on the brown outer field -->
+          <tr>
+            <td class="brand-band" align="center">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr><td class="badge-cell" align="center">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td class="badge" align="center" valign="middle"><span class="badge-letter">B</span></td>
+                  </tr></table>
+                </td></tr>
+                <tr><td class="wordmark" align="center">BEAUTY DASH</td></tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Cream content panel -->
+          <tr>
+            <td class="panel">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr class="eyebrow-row">
+                  <td align="left">WEEKLY UPDATE</td>
+                  <td align="right">ISSUE #{{ issue_number }}</td>
+                </tr>
+                <tr><td colspan="2" class="headline">{{ headline }}</td></tr>
+                <tr><td colspan="2" class="divider">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td style="font-size:13px; color:#8B5A3C;">&#9825;</td>
+                  </tr></table>
+                </td></tr>
+                {% if intro %}
+                <tr><td colspan="2" class="intro">{{ intro }}</td></tr>
+                {% endif %}
+
+                {% for update in updates %}
+                <tr><td colspan="2" class="card-wrap">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card">
+                    <tr><td class="card-heading">{{ update.heading }}</td></tr>
+                    {% if update.steps %}
+                    <tr><td>
+                      <ol class="step-list">
+                        {% for step in update.steps %}
+                        <li>{{ step }}</li>
+                        {% endfor %}
+                      </ol>
+                    </td></tr>
+                    {% else %}
+                    <tr><td class="card-body">{{ update.body }}</td></tr>
+                    {% endif %}
+                  </table>
+                </td></tr>
+                {% endfor %}
+
+                {% if voice_card %}
+                <tr><td colspan="2" class="card-wrap">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="voice-card">
+                    <tr><td class="voice-heading">{{ voice_card.heading }}</td></tr>
+                    <tr><td class="voice-body">{{ voice_card.body }}</td></tr>
+                  </table>
+                </td></tr>
+                {% endif %}
+
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer band -->
+          <tr>
+            <td class="footer-band">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td align="center">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td class="footer-item">Beautydash.online</td>
+                    <td class="footer-divider">|</td>
+                    <td class="footer-item">&#128247; @beautydashhq</td>
+                    <td class="footer-divider">|</td>
+                    <td class="footer-item">&#127925; @beautydashhh</td>
+                  </tr></table>
+                </td></tr>
+                <tr><td class="disclaimer-cell">
+                  <span class="disclaimer">You're receiving this because you joined the Beauty Dash early access list. &#9825;</span>
+                </td></tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

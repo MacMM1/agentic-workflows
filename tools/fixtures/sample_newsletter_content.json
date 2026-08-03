@@ -1,0 +1,41 @@
+{
+  "topic": "coffee prices 2026",
+  "generated_at": "2026-08-01T14:32:00Z",
+  "subject": "Coffee prices are about to spike — here's why",
+  "preheader": "Frost in Brazil, a weak harvest, and what it means for your morning cup.",
+  "headline": "Why your coffee is about to get more expensive",
+  "sections": [
+    {
+      "id": "section-1",
+      "heading": "The short version",
+      "body": "A run of poor harvests in Brazil and Vietnam, the two largest coffee producers, has tightened global supply just as demand keeps climbing. Futures prices have nearly doubled in a year.",
+      "chart_ref": null
+    },
+    {
+      "id": "section-2",
+      "heading": "Prices by quarter",
+      "body": "Arabica futures have climbed steadily each quarter since early 2025, with the sharpest jump following a frost warning in Brazil's Minas Gerais region.",
+      "chart_ref": "chart-1"
+    }
+  ],
+  "charts": [
+    {
+      "id": "chart-1",
+      "title": "Arabica futures price by quarter (2025-2026)",
+      "type": "bar",
+      "x_label": "Quarter",
+      "y_label": "USD / lb",
+      "data": {
+        "categories": ["Q1 2025", "Q2 2025", "Q3 2025", "Q4 2025", "Q1 2026"],
+        "series": [
+          {"name": "Arabica", "values": [1.8, 2.1, 2.4, 2.9, 3.2]}
+        ]
+      },
+      "note": "Source: ICE Futures U.S. (fixture data, illustrative only)"
+    }
+  ],
+  "sources": [
+    {"title": "USDA Coffee: World Markets and Trade (sample)", "url": "https://example.gov/coffee-report", "accessed_at": "2026-08-01"},
+    {"title": "ICE Futures Arabica settlement data (sample)", "url": "https://example.com/ice-arabica", "accessed_at": "2026-08-01"}
+  ]
+}
