@@ -1,11 +1,6 @@
-# Macdonald Mide-Madariola
+# Candidate CV — Skills & Experience Summary
 
-## Details
-- Email: Midemadariola@gmail.com
-- Phone: 07836316478
-- LinkedIn: https://www.linkedin.com/in/macdonald-mide-madariola
-- Location: Gravesend, Kent, UK
-- Driving License: Cat B Auto License
+*Contact details redacted; this copy is used only to match job postings against skills and experience.*
 
 ## Relevant Education
 - MBA in Business Administration (Entrepreneurship) (Completion: 2026), Wrexham University
