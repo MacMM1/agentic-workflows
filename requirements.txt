@@ -6,3 +6,11 @@ google-auth
 google-auth-httplib2
 google-auth-oauthlib
 python-dotenv
+python-docx
+playwright
+requests
+openpyxl
+numpy
+sounddevice
+soundfile
+faster-whisper
