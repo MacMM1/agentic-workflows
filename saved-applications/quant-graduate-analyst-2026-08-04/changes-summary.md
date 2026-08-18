@@ -22,13 +22,9 @@
 
 ## Full tailored CV text
 
-**MACDONALD MIDE-MADARIOLA**
+*[Name and contact details redacted]*
 
 **DETAILS**
-Email- Midemadariola@gmail.com
-Phone No- 07836316478
-LinkedIn- https://www.linkedin.com/in/macdonald-mide-madariola
-Location- Gravesend, Kent, UK
 Driving License- Cat B Auto License
 
 **RELEVANT EDUCATION**
@@ -102,10 +98,7 @@ AVAILABLE ON REQUEST
 
 ## Full tailored cover letter text
 
-Macdonald Mide-Madariola
-Email: midemadariola@gmail.com
-Phone: 07836 316478
-LinkedIn: linkedin.com/in/macdonald-mide-madariola
+*[Name and contact details redacted]*
 
 I am writing to express my interest in the Graduate Analyst position advertised via Haystack. With a background in Computer Science, data management, and detail-driven administrative roles, I bring a strong combination of analytical thinking, accuracy, and a genuine curiosity about how research and technology come together to solve real problems.
 

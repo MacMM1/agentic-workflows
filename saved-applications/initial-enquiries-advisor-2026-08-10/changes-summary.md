@@ -23,13 +23,9 @@
 
 ## Full tailored CV text
 
-MACDONALD MIDE-MADARIOLA
+*[Name and contact details redacted]*
 
 **DETAILS**
-Email: Midemadariola@gmail.com
-Phone No: 07836316478
-LinkedIn: https://www.linkedin.com/in/macdonald-mide-madariola
-Location: Gravesend, Kent, UK
 Driving License: Cat B Auto License
 
 **RELEVANT EDUCATION**
@@ -96,10 +92,7 @@ Available on request
 
 ## Full tailored cover letter text
 
-Macdonald Mide-Madariola
-Email: midemadariola@gmail.com
-Phone: 07836 316478
-LinkedIn: linkedin.com/in/macdonald-mide-madariola
+*[Name and contact details redacted]*
 
 I am writing to express my interest in the Initial Enquiries Advisor position at The Property Ombudsman. With a background in customer query handling, data management, and administrative support, I bring a strong combination of clear communication, attention to detail, and a genuine commitment to customer service that would allow me to add value to your team.
 
